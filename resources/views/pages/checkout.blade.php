@@ -64,6 +64,9 @@
 								    data-locale="auto">
 								  </script> -->
 								<!-- </form> -->
+								<?php
+									$price=substr($product['discount_price'],1)*100;
+								?>
 								<script
 								  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 								  data-key="pk_live_UvtBzXZ5WLQOvDH9qf2iW8ED"
@@ -72,7 +75,7 @@
 								  data-description="Pro Subscription ($29 per month)"
 								  data-panel-label="Buy Now"
 								  data-label="Buy Now"
-								  data-amount="2900"
+								  data-amount="{{ $price }}"
 								  data-allow-remember-me="false">
 								</script>
 							</a></td>

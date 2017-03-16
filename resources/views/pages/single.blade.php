@@ -56,7 +56,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<h4 class="quick">Quick Overview:</h4>
-					<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
+					<p class="quick_desc">{{ $item['detail'] }}</p>
 					<div class="clearfix"> </div>
 				</div>
 				

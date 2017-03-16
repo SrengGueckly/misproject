@@ -14,7 +14,7 @@
 </div>
 <!--content-->
 <div class="product">
-	<div class="container">
+	<!-- <div class="container"> -->
 		<div class="col-md-12">
 			<div class="mid-popular">
 			@foreach($products as $key => $item)
@@ -24,7 +24,7 @@
 							<img src="{{ $item['src'] }}" class="img-responsive1" alt="">
 							<div class="zoom-icon ">
 								<a class="picture" href="{{ $item['src'] }}" rel="title" class="b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
-								<a href="single"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+								<a href="/single/{{ $item['id'] }}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
 							</div>
 						</div>
 						<div class="mid-1">

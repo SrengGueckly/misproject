@@ -6,22 +6,22 @@
 	<div class="container">
 		<section class="rw-wrapper">
 			<h1 class="rw-sentence">
-			<span>Fashion &amp; Beauty</span>
+			<span>Fashion 2017</span>
 			<div class="rw-words rw-words-1">
-				<span>Beautiful Designs</span>
-				<span>Sed ut perspiciatis</span>
-				<span> Totam rem aperiam</span>
-				<span>Nemo enim ipsam</span>
-				<span>Temporibus autem</span>
-				<span>intelligent systems</span>
+				<span>Bags</span>
+				<span>Hoodies &amp; Sweatshirts</span>
+				<span>Jackets &amp; Coats</span>
+				<span>Jean Jewellery</span>
+				<span>Sweatpants</span>
+				<span>Swimwear</span>
 			</div>
 			<div class="rw-words rw-words-2">
-				<span>We denounce with right</span>
-				<span>But in certain circum</span>
-				<span>Sed ut perspiciatis unde</span>
-				<span>There are many variation</span>
-				<span>The generated Lorem Ipsum</span>
-				<span>Excepteur sint occaecat</span>
+				<span>Leather Jackets</span>
+				<span>Shirts</span>
+				<span>Shoes, Boots &amp; Trainers</span>
+				<span>T-shirt</span>
+				<span>Underwears &amp; Socks</span>
+				<span>Vests</span>
 			</div>
 			</h1>
 		</section>
@@ -33,40 +33,39 @@
 		<div class="content-top">
 			<div class="col-md-6 col-md">
 				<div class="col-1">
-					<a href="single" class="b-link-stroke b-animate-go  thickbox">
-						<img src="/images/pi.jpg" class="img-responsive" alt=""/><div class="b-wrapper1 long-img"><p class="b-animate b-from-right    b-delay03 ">Lorem ipsum</p><label class="b-animate b-from-right    b-delay03 "></label><h3 class="b-animate b-from-left    b-delay03 ">Trendy</h3></div></a>
+					<a href="javascript:void(0);" class="b-link-stroke b-animate-go  thickbox">
+						<img src="/images/pi(1).jpg" class="img-responsive" alt=""/><div class="b-wrapper1 long-img"><p class="b-animate b-from-right    b-delay03 ">Hin Channiroth</p><label class="b-animate b-from-right    b-delay03 "></label><h3 class="b-animate b-from-left    b-delay03 ">Our Model</h3></div></a>
 						<!---<a href="single.html"><img src="images/pi.jpg" class="img-responsive" alt=""></a>-->
 					</div>
 					<div class="col-2">
 						<span>Hot Deal</span>
-						<h2><a href="single">Luxurious &amp; Trendy</a></h2>
-						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years</p>
-						<a href="single" class="buy-now">Buy Now</a>
+						<h2><a href="javascript:void(0);">Luxurious &amp; Trendy</a></h2>
+						<p>The newest among products! We sell you the best quality product, reasonable price... Please keep following our website for the update every week.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-md1">
 					<div class="col-3">
-						<a href="single"><img src="/images/pi1.jpg" class="img-responsive" alt="">
+						<a href="javascript:void(0);"><img src="/images/pi(2).jpg" class="img-responsive" alt="">
 							<div class="col-pic">
-								<p>Lorem Ipsum</p>
+								<p>Alex Chandra</p>
 								<label></label>
-								<h5>For Men</h5>
+								<h5>Our Model</h5>
 							</div></a>
 						</div>
 						<div class="col-3">
-							<a href="single"><img src="/images/pi2.jpg" class="img-responsive" alt="">
+							<a href="javascript:void(0);"><img src="/images/pi(3).jpg" class="img-responsive" alt="">
 								<div class="col-pic">
-									<p>Lorem Ipsum</p>
+									<p>Hin Channiroth</p>
 									<label></label>
-									<h5>For Kids</h5>
+									<h5>Our Model</h5>
 								</div></a>
 							</div>
 							<div class="col-3">
-								<a href="single"><img src="/images/pi3.jpg" class="img-responsive" alt="">
+								<a href="javascript:void(0);"><img src="/images/pi3.jpg" class="img-responsive" alt="">
 									<div class="col-pic">
-										<p>Lorem Ipsum</p>
+										<p>Sarah</p>
 										<label></label>
-										<h5>For Women</h5>
+										<h5>Our Model</h5>
 									</div></a>
 								</div>
 							</div>
@@ -91,7 +90,7 @@
 												<img src="{{ $item['src'] }}" class="img-responsive" alt="">
 												<div class="zoom-icon ">
 													<a class="picture" href="{{ $item['src'] }}" rel="title" class="b-link-stripe b-animate-go  thickbox"><i class="glyphicon glyphicon-search icon "></i></a>
-													<a href="single"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+													<a href="/single/{{ $item['id'] }}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
 												</div>
 											</div>
 											<div class="mid-1">

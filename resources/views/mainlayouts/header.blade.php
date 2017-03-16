@@ -9,9 +9,7 @@
 	<div class="header-top">
 		<div class="container">
 			<div class="col-sm-5 col-md-offset-2  header-login">
-				<ul >
-					<li><a href="{{$baseUrlLang}}/login">Login</a></li>
-					<li><a href="{{$baseUrlLang}}/register">Register</a></li>
+				<ul>
 					<li><a href="{{$baseUrlLang}}/checkout">Checkout</a></li>
 				</ul>
 			</div>
@@ -19,7 +17,7 @@
 			<div class="col-sm-5 header-social">		
 					<ul >
 						<li><a href="#"><i></i></a></li>
-						<li><a href="#"><i class="ic1"></i></a></li>
+						<li><a href="https://www.facebook.com/%E1%9E%98%E1%9E%BE%E1%9E%9B%E1%9E%A2%E1%9E%B8%E1%9E%98%E1%9E%BE%E1%9E%9B%E1%9E%91%E1%9F%85-681969555298264/" target="_blank"><i class="ic1"></i></a></li>
 						<li><a href="#"><i class="ic2"></i></a></li>
 						<li><a href="#"><i class="ic3"></i></a></li>
 						<li>
@@ -72,10 +70,10 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu1</h4> -->
 													<ul>
-														<li><a href="{{$baseUrlLang}}/product/women/accessory">Accessories</a></li>
-														<li><a href="{{$baseUrlLang}}/product/women/bag">Bags</a></li>
-														<li><a href="{{$baseUrlLang}}/product/women/hat">Caps & Hats</a></li>
-														<li><a href="{{$baseUrlLang}}/product/women/sweatshirt">Hoodies & Sweatshirts</a></li>
+														<li><a href="{{$baseUrlLang}}/product/women/accessory">{{ trans('content.type.type_1') }}</a></li>
+														<li><a href="{{$baseUrlLang}}/product/women/bag">{{ trans('content.type.type_2') }}</a></li>
+														<li><a href="{{$baseUrlLang}}/product/women/hat">{{ trans('content.type.type_3') }}</a></li>
+														<li><a href="{{$baseUrlLang}}/product/women/sweatshirt">{{ trans('content.type.type_4') }}</a></li>
 														
 													</ul>	
 											</div>							
@@ -84,12 +82,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu2</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/women/jacket">Jackets & Coats</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jean">Jeans</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jewellery">Jewellery</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jumper">Jumpers & Cardigans</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/leatherjacket">Leather Jackets</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/longsleeve">Long Sleeve T-Shirts</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jacket">{{ trans('content.type.type_5') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jean">{{ trans('content.type.type_6') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jewellery">{{ trans('content.type.type_7') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jumper">{{ trans('content.type.type_8') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/leatherjacket">{{ trans('content.type.type_9') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/longsleeve">{{ trans('content.type.type_10') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -97,12 +95,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu3</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/women/shirt">Shirts</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/shoes">Shoes, Boots & Trainers</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/sunglasses">Sunglasses</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/sweatpants">Sweatpants</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/swimwear">Swimwear</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/trouser">Trousers & Chinos</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/shirt">{{ trans('content.type.type_11') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/shoes">{{ trans('content.type.type_12') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/sunglasses">{{ trans('content.type.type_13') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/sweatpants">{{ trans('content.type.type_14') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/swimwear">{{ trans('content.type.type_15') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/trouser">{{ trans('content.type.type_16') }}</a></li>
 													
 												</ul>	
 											</div>							
@@ -111,12 +109,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu4</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/women/tshirt">T-Shirts</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/underwear">Underwear & Socks</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/vest">Vests</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jacket">Jackets & Coats</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jean">Jeans</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jewellery">Jewellery</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/tshirt">{{ trans('content.type.type_17') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/underwear">{{ trans('content.type.type_18') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/vest">{{ trans('content.type.type_19') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jacket">{{ trans('content.type.type_20') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jean">{{ trans('content.type.type_21') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/women/jewellery">{{ trans('content.type.type_22') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -135,10 +133,10 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu1</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/men/accessory">Accessories</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/bag">Bags</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/hat">Caps & Hats</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/sweatshirt">Hoodies & Sweatshirts</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/accessory">{{ trans('content.type.type_1') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/bag">{{ trans('content.type.type_2') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/hat">{{ trans('content.type.type_3') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/sweatshirt">{{ trans('content.type.type_4') }}</a></li>
 													
 												</ul>	
 											</div>							
@@ -147,12 +145,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu2</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/men/jacket">Jackets & Coats</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/jean">Jeans</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/jewellery">Jewellery</a></li>
-													<li><a href="/product/men/jumper">Jumpers & Cardigans</a></li>
-													<li><a href="/product/men/leatherjacket">Leather Jackets</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/longsleeve">Long Sleeve T-Shirts</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/jacket">{{ trans('content.type.type_5') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/jean">{{ trans('content.type.type_6') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/jewellery">{{ trans('content.type.type_7') }}</a></li>
+													<li><a href="/product/men/jumper">{{ trans('content.type.type_8') }}</a></li>
+													<li><a href="/product/men/leatherjacket">{{ trans('content.type.type_9') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/longsleeve">{{ trans('content.type.type_10') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -161,12 +159,12 @@
 												<!-- <h4>Submenu3</h4> -->
 												
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/men/shirt">Shirts</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/shoes">Shoes, Boots & Trainers</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/sunglasses">Sunglasses</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/sweatpants">Sweatpants</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/swimwear">Swimwear</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/trouser">Trousers & Chinos</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/shirt">{{ trans('content.type.type_11') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/shoes">{{ trans('content.type.type_12') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/sunglasses">{{ trans('content.type.type_13') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/sweatpants">{{ trans('content.type.type_14') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/swimwear">{{ trans('content.type.type_15') }}</a></li>
+													<li><a href="{{$baseUrlLang}}/product/men/trouser">{{ trans('content.type.type_16') }}</a></li>
 													
 												</ul>	
 												
@@ -176,12 +174,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu4</h4> -->
 												<ul>
-													<li><a href="/product/men/tshirt">T-Shirts</a></li>
-													<li><a href="/product/men/underwear">Underwear & Socks</a></li>
-													<li><a href="/product/men/vest">Vests</a></li>
-													<li><a href="/product/men/jacket">Jackets & Coats</a></li>
-													<li><a href="/product/men/jean">Jeans</a></li>
-													<li><a href="/product/men/jewellery">Jewellery</a></li>
+													<li><a href="/product/men/tshirt">{{ trans('content.type.type_17') }}</a></li>
+													<li><a href="/product/men/underwear">{{ trans('content.type.type_18') }}</a></li>
+													<li><a href="/product/men/vest">{{ trans('content.type.type_19') }}</a></li>
+													<li><a href="/product/men/jacket">{{ trans('content.type.type_20') }} & Coats</a></li>
+													<li><a href="/product/men/jean">{{ trans('content.type.type_21') }}</a></li>
+													<li><a href="/product/men/jewellery">{{ trans('content.type.type_22') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
