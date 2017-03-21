@@ -10,17 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-    {
-    	$baseUrl=URL::to('/'); // baseUrl use every where with translate
-		$lang=LaravelLocalization::getCurrentLocale();
-		if($lang=='en') // check is lang now === default the url is normal without lang
-		    $baseUrlLang=URL::to('/');
-		else
-		    $baseUrlLang=URL::to('/' . $lang) ; // baseUrl use every where with translate
-		View::share('baseUrl',$baseUrl); // share baseUrl Normal(without language) to all view (globle)
-		View::share('baseUrlLang',$baseUrlLang); // share baseUrlLang (with language) to all view (globle)
-		View::share('lang',$lang); // share baseUrlLang (with language) to all view (globle)
+// Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+//     {
+//     	$baseUrl=URL::to('/'); // baseUrl use every where with translate
+// 		$lang=LaravelLocalization::getCurrentLocale();
+// 		if($lang=='en') // check is lang now === default the url is normal without lang
+// 		    $baseUrlLang=URL::to('/');
+// 		else
+// 		    $baseUrlLang=URL::to('/' . $lang) ; // baseUrl use every where with translate
+// 		View::share('baseUrl',$baseUrl); // share baseUrl Normal(without language) to all view (globle)
+// 		View::share('baseUrlLang',$baseUrlLang); // share baseUrlLang (with language) to all view (globle)
+// 		View::share('lang',$lang); // share baseUrlLang (with language) to all view (globle)
 
 		Route::get('/', function () {
 		    return view('pages/index');
@@ -68,4 +68,5 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 		Route::post('/deleteproduct','PagesController@deleteproduct');
 		Route::get('/single/{proid}','PagesController@single');
 		Route::get('/search/{name}','PagesController@search');
- });
+		Route::post('/buynow','PagesController@buynow');
+ // });

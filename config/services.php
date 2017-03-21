@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
+        'domain' => 'alerts.flexitech.io',
+        'secret' => 'key-3507f504194ff52a89d9c919c5ba5126',
     ],
 
     'ses' => [

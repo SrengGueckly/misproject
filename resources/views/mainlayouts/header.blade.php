@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="head">
 			<div class=" logo">
-				<a href="{{$baseUrlLang}}/"><img src="/images/logo1.png" alt=""></a>	
+				<a href="/"><img src="/images/logo1.png" alt=""></a>	
 			</div>
 		</div>
 	</div>
@@ -10,7 +10,7 @@
 		<div class="container">
 			<div class="col-sm-5 col-md-offset-2  header-login">
 				<ul>
-					<li><a href="{{$baseUrlLang}}/checkout">Checkout</a></li>
+					<li><a href="/checkout">Checkout</a></li>
 				</ul>
 			</div>
 				
@@ -20,7 +20,7 @@
 						<li><a href="https://www.facebook.com/%E1%9E%98%E1%9E%BE%E1%9E%9B%E1%9E%A2%E1%9E%B8%E1%9E%98%E1%9E%BE%E1%9E%9B%E1%9E%91%E1%9F%85-681969555298264/" target="_blank"><i class="ic1"></i></a></li>
 						<li><a href="#"><i class="ic2"></i></a></li>
 						<li><a href="#"><i class="ic3"></i></a></li>
-						<li>
+						<!-- <li>
 							@if ($lang === 'en')
 							<a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('kh') }}">
 								<img class="img-fluid flag" src="{{ asset('images/kh_icon.jpg') }}" alt="english language">
@@ -32,7 +32,7 @@
 								<span class="_text lang">EN</span>
 							</a>
 							@endif
-						</li>
+						</li> -->
 					</ul>
 					
 			</div>
@@ -70,10 +70,10 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu1</h4> -->
 													<ul>
-														<li><a href="{{$baseUrlLang}}/product/women/accessory">{{ trans('content.type.type_1') }}</a></li>
-														<li><a href="{{$baseUrlLang}}/product/women/bag">{{ trans('content.type.type_2') }}</a></li>
-														<li><a href="{{$baseUrlLang}}/product/women/hat">{{ trans('content.type.type_3') }}</a></li>
-														<li><a href="{{$baseUrlLang}}/product/women/sweatshirt">{{ trans('content.type.type_4') }}</a></li>
+														<li><a href="/product/women/accessory">{{ trans('content.type.type_1') }}</a></li>
+														<li><a href="/product/women/bag">{{ trans('content.type.type_2') }}</a></li>
+														<li><a href="/product/women/hat">{{ trans('content.type.type_3') }}</a></li>
+														<li><a href="/product/women/sweatshirt">{{ trans('content.type.type_4') }}</a></li>
 														
 													</ul>	
 											</div>							
@@ -82,12 +82,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu2</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/women/jacket">{{ trans('content.type.type_5') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jean">{{ trans('content.type.type_6') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jewellery">{{ trans('content.type.type_7') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jumper">{{ trans('content.type.type_8') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/leatherjacket">{{ trans('content.type.type_9') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/longsleeve">{{ trans('content.type.type_10') }}</a></li>
+													<li><a href="/product/women/jacket">{{ trans('content.type.type_5') }}</a></li>
+													<li><a href="/product/women/jean">{{ trans('content.type.type_6') }}</a></li>
+													<li><a href="/product/women/jewellery">{{ trans('content.type.type_7') }}</a></li>
+													<li><a href="/product/women/jumper">{{ trans('content.type.type_8') }}</a></li>
+													<li><a href="/product/women/leatherjacket">{{ trans('content.type.type_9') }}</a></li>
+													<li><a href="/product/women/longsleeve">{{ trans('content.type.type_10') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -95,12 +95,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu3</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/women/shirt">{{ trans('content.type.type_11') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/shoes">{{ trans('content.type.type_12') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/sunglasses">{{ trans('content.type.type_13') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/sweatpants">{{ trans('content.type.type_14') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/swimwear">{{ trans('content.type.type_15') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/trouser">{{ trans('content.type.type_16') }}</a></li>
+													<li><a href="/product/women/shirt">{{ trans('content.type.type_11') }}</a></li>
+													<li><a href="/product/women/shoes">{{ trans('content.type.type_12') }}</a></li>
+													<li><a href="/product/women/sunglasses">{{ trans('content.type.type_13') }}</a></li>
+													<li><a href="/product/women/sweatpants">{{ trans('content.type.type_14') }}</a></li>
+													<li><a href="/product/women/swimwear">{{ trans('content.type.type_15') }}</a></li>
+													<li><a href="/product/women/trouser">{{ trans('content.type.type_16') }}</a></li>
 													
 												</ul>	
 											</div>							
@@ -109,12 +109,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu4</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/women/tshirt">{{ trans('content.type.type_17') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/underwear">{{ trans('content.type.type_18') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/vest">{{ trans('content.type.type_19') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jacket">{{ trans('content.type.type_20') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jean">{{ trans('content.type.type_21') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/women/jewellery">{{ trans('content.type.type_22') }}</a></li>
+													<li><a href="/product/women/tshirt">{{ trans('content.type.type_17') }}</a></li>
+													<li><a href="/product/women/underwear">{{ trans('content.type.type_18') }}</a></li>
+													<li><a href="/product/women/vest">{{ trans('content.type.type_19') }}</a></li>
+													<li><a href="/product/women/jacket">{{ trans('content.type.type_20') }}</a></li>
+													<li><a href="/product/women/jean">{{ trans('content.type.type_21') }}</a></li>
+													<li><a href="/product/women/jewellery">{{ trans('content.type.type_22') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -133,10 +133,10 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu1</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/men/accessory">{{ trans('content.type.type_1') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/bag">{{ trans('content.type.type_2') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/hat">{{ trans('content.type.type_3') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/sweatshirt">{{ trans('content.type.type_4') }}</a></li>
+													<li><a href="/product/men/accessory">{{ trans('content.type.type_1') }}</a></li>
+													<li><a href="/product/men/bag">{{ trans('content.type.type_2') }}</a></li>
+													<li><a href="/product/men/hat">{{ trans('content.type.type_3') }}</a></li>
+													<li><a href="/product/men/sweatshirt">{{ trans('content.type.type_4') }}</a></li>
 													
 												</ul>	
 											</div>							
@@ -145,12 +145,12 @@
 											<div class="h_nav">
 												<!-- <h4>Submenu2</h4> -->
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/men/jacket">{{ trans('content.type.type_5') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/jean">{{ trans('content.type.type_6') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/jewellery">{{ trans('content.type.type_7') }}</a></li>
+													<li><a href="/product/men/jacket">{{ trans('content.type.type_5') }}</a></li>
+													<li><a href="/product/men/jean">{{ trans('content.type.type_6') }}</a></li>
+													<li><a href="/product/men/jewellery">{{ trans('content.type.type_7') }}</a></li>
 													<li><a href="/product/men/jumper">{{ trans('content.type.type_8') }}</a></li>
 													<li><a href="/product/men/leatherjacket">{{ trans('content.type.type_9') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/longsleeve">{{ trans('content.type.type_10') }}</a></li>
+													<li><a href="/product/men/longsleeve">{{ trans('content.type.type_10') }}</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -159,12 +159,12 @@
 												<!-- <h4>Submenu3</h4> -->
 												
 												<ul>
-													<li><a href="{{$baseUrlLang}}/product/men/shirt">{{ trans('content.type.type_11') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/shoes">{{ trans('content.type.type_12') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/sunglasses">{{ trans('content.type.type_13') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/sweatpants">{{ trans('content.type.type_14') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/swimwear">{{ trans('content.type.type_15') }}</a></li>
-													<li><a href="{{$baseUrlLang}}/product/men/trouser">{{ trans('content.type.type_16') }}</a></li>
+													<li><a href="/product/men/shirt">{{ trans('content.type.type_11') }}</a></li>
+													<li><a href="/product/men/shoes">{{ trans('content.type.type_12') }}</a></li>
+													<li><a href="/product/men/sunglasses">{{ trans('content.type.type_13') }}</a></li>
+													<li><a href="/product/men/sweatpants">{{ trans('content.type.type_14') }}</a></li>
+													<li><a href="/product/men/swimwear">{{ trans('content.type.type_15') }}</a></li>
+													<li><a href="/product/men/trouser">{{ trans('content.type.type_16') }}</a></li>
 													
 												</ul>	
 												
@@ -190,10 +190,10 @@
 									</div>                  
 								</div>				
 							</li>
-							<li><a class="color3" href="{{$baseUrlLang}}/product">{{ trans('content.header.header_4') }}</a></li>
-							<li><a class="color4" href="{{$baseUrlLang}}/404">{{ trans('content.header.header_5') }}</a></li>
+							<li><a class="color3" href="/product">{{ trans('content.header.header_4') }}</a></li>
+							<li><a class="color4" href="/404">{{ trans('content.header.header_5') }}</a></li>
 				          <!--   <li><a class="color5" href="{{$baseUrlLang}}/typo">{{ trans('content.header.header_6') }}</a></li> -->
-				            <li ><a class="color6" href="{{$baseUrlLang}}/contact">{{ trans('content.header.header_7') }}</a></li>
+				            <li ><a class="color6" href="/contact">{{ trans('content.header.header_7') }}</a></li>
 				        </ul>
 				    </div><!-- /.navbar-collapse -->
 

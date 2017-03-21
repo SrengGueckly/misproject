@@ -33,9 +33,9 @@
 					<tr class="cart-header">
 						<td class="ring-in">
 							<!-- <form method="post" action="/single">
-									{{ csrf_field() }}
-									<input type="hidden" name="productId" value="{{$product['id']}}">
-									<button type="submit" class="at-in"><img src="{{ $product['src'] }}" class="img-responsive" alt=""></button>
+										{{ csrf_field() }}
+										<input type="hidden" name="productId" value="{{$product['id']}}">
+										<button type="submit" class="at-in"><img src="{{ $product['src'] }}" class="img-responsive" alt=""></button>
 							</form> -->
 							<a href="/single/{{ $product['id'] }}" class="at-in"><img src="{{ $product['src'] }}" class="img-responsive" alt=""></a>
 							<div class="sed">
@@ -54,30 +54,62 @@
 							<td class="item_price" id="myprice">{{ $product['discount_price'] }}</td>
 							<td class="add-check"><a class="item_add hvr-skew-backward1" href="#">
 								<!-- <form action="" method="POST"> -->
-								 <!--  <script
-								    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-								    data-key="pk_test_KCw3yivWWmhhSgS7jTZWCA9I"
-								    data-amount="998"
-								    data-name="Demo Site"
-								    data-description="Widget"
-								    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-								    data-locale="auto">
-								  </script> -->
+								<!--  <script
+								src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+								data-key="pk_test_KCw3yivWWmhhSgS7jTZWCA9I"
+								data-amount="998"
+								data-name="Demo Site"
+								data-description="Widget"
+								data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+								data-locale="auto">
+								</script> -->
 								<!-- </form> -->
 								<?php
-									$price=substr($product['discount_price'],1)*100;
+									$price=$product['discount_price'];
+									// $price=substr($product['discount_price'],1)*100;
 								?>
-								<script
-								  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-								  data-key="pk_live_UvtBzXZ5WLQOvDH9qf2iW8ED"
-								  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-								  data-name="Demo SaaS Site"
-								  data-description="Pro Subscription ($29 per month)"
-								  data-panel-label="Buy Now"
-								  data-label="Buy Now"
-								  data-amount="{{ $price }}"
-								  data-allow-remember-me="false">
-								</script>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal_{{ $key+1 }}">
+								Buy Now
+								</button>
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal_{{ $key+1 }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<form method="post" action="/buynow">
+										{{ csrf_field() }}
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="exampleModalLabel">Please Fill in your information</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<table>
+														<tr>
+															<td>Phone Number</td>
+															<td><input name="phone"></td>
+														</tr>
+														<tr>
+															<td>Location</td>
+															<td><input name="location"></td>
+														</tr>
+														<tr>
+															<td>Product</td>
+															<td><input name="productname" value="{{ $product['title'] }}" readonly></td>
+														</tr>
+														<tr>
+															<td>Price</td>
+															<td><input name="productprice" value="{{ $product['discount_price'] }}"  readonly></td>
+														</tr>
+													</table>
+												</div>
+												<div class="modal-footer">
+													<button type="submit" class="btn btn-primary">Buy Now {{ $price }}</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
 							</a></td>
 						</tr>
 						@endforeach
@@ -93,36 +125,7 @@
 	<!--//content-->
 	@stop
 	@section('script')
-
-		<!-- <script src="https://checkout.stripe.com/checkout.js"></script>
-
-			<button id="customButton">Purchase</button>
-
-			<script>
-			var handler = StripeCheckout.configure({
-			  key: 'pk_test_KCw3yivWWmhhSgS7jTZWCA9I',
-			  image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-			  locale: 'auto',
-			  token: function(token) {
-			    // You can access the token ID with `token.id`.
-			    // Get the token ID to your server-side code for use.
-			  }
-			});
-
-			document.getElementById('customButton').addEventListener('click', function(e) {
-			  // Open Checkout with further options:
-			  handler.open({
-			    name: 'Demo Site',
-			    description: '2 widgets',
-			    amount: 2000
-			  });
-			  e.preventDefault();
-			});
-
-			// Close Checkout on page navigation:
-			window.addEventListener('popstate', function() {
-			  handler.close();
-			});
-			</script> -->
-
+		<script type="text/javascript">
+			
+		</script>
 	@stop

@@ -6,10 +6,12 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use GuzzleHttp\Client;
 use \Session;
 use Illuminate\Support\Facades\Input;
 use View;
 use Illuminate\Routing\UrlGenerator;
+use Mail;
 
 class PagesController extends Controller
 {
@@ -113,7 +115,41 @@ class PagesController extends Controller
       return redirect('/checkout');
      
    }
-
+   public function buynow(){
+      $phone=Input::get('phone');
+      $location=Input::get('location');
+      $producttitle=Input::get('producttitle');
+      $productprice=Input::get('productprice');
+      $client = new \GuzzleHttp\Client();
+      $client->setDefaultOption('verify', false);
+          $inputAll=Input::all();
+          try{
+              // Validate input
+                  Mail::queue('emails.emails_sender',
+                      [
+                          'phone'=>Input::get('phone'),
+                          'location'=>Input::get('location'),
+                          'producttitle'=>Input::get('producttitle'),
+                          'productprice'=>Input::get('productprice')
+                      ], function($message)
+                  {
+                      $message->from('ahcico697@gmail.com', 'Grand Phnom Penh International City (GPPIC)');
+                      $message->to('srengguecklysreng@gmail.com')->subject('Welcome to SyClction Online Shop');
+                  });
+                  $inputAll = [];
+                  $inputAll['error_msg'] = 'Thank you! Your submission is complete';
+                  $inputAll['error_type'] = 'success';
+                  echo 'success'; die();
+                  return redirect('/checkout')->with($inputAll);
+          }
+          catch (\Exception $e){  
+              $inputAll = Input::all();
+              $inputAll['error_msg'] = 'Something\'s wrong with sending email to us! ' . $e->getMessage();
+              $inputAll['error_type'] = 'error';
+              echo '<pre>'.print_r($inputAll,true).'<pre>'; die();
+              return redirect('/checkout')->with($inputAll);
+          }
+   }
    public function addtocart(){
    		$productId = Input::get('productId');
       $data;
