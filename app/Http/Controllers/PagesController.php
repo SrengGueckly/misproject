@@ -139,15 +139,29 @@ class PagesController extends Controller
                   $inputAll = [];
                   $inputAll['error_msg'] = 'Thank you! Your submission is complete';
                   $inputAll['error_type'] = 'success';
-                  echo 'success'; die();
+
+                  $productId=Input::get('productId');
+                  $deletekey;
+                  $products=Session::get('myCart');
+                  foreach($products as $key => $product){
+                     if($product['id']==$productId){
+                      $deletekey=$key;
+                      break;
+                    }
+                   
+                  }
+                   unset($products[$key]);
+                   $tmp=$products;
+                   Session::forget('myCart');
+                   Session::put('myCart',$tmp);
+
                   return redirect('/checkout')->with($inputAll);
           }
           catch (\Exception $e){  
               $inputAll = Input::all();
               $inputAll['error_msg'] = 'Something\'s wrong with sending email to us! ' . $e->getMessage();
               $inputAll['error_type'] = 'error';
-              echo '<pre>'.print_r($inputAll,true).'<pre>'; die();
-              return redirect('/checkout')->with($inputAll);
+              return redirect('/checkout')->with('data',$inputAll);
           }
    }
    public function addtocart(){

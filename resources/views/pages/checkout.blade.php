@@ -95,7 +95,8 @@
 														</tr>
 														<tr>
 															<td>Product</td>
-															<td><input name="productname" value="{{ $product['title'] }}" readonly></td>
+															<td><input name="producttitle" value="{{ $product['title'] }}" readonly></td>
+															<input type="hidden" name="productId" value="{{ $product['id'] }}">
 														</tr>
 														<tr>
 															<td>Price</td>
@@ -117,6 +118,23 @@
 				</div>
 			</div>
 		</div>
+		<section>
+
+		<?php
+
+		 	$myData = Session::get('error_msg');
+
+		?>
+		<!-- <pre>{{ print_r($myData,true) }}</pre> -->
+		 @if(isset($myData))
+		<div class="container">
+		   <br>
+			<div class="alert alert-success" role="alert" id="success-alert">
+				<strong>Yeahh!</strong> Thank for Purchasing!
+			</div>
+		</div>
+		@endif
+		</section>
 	</div>
 	<!--//login-->
 	<!--brand-->
@@ -126,6 +144,14 @@
 	@stop
 	@section('script')
 		<script type="text/javascript">
-			
+			$(document).ready(function () {
+ 
+			window.setTimeout(function() {
+			    $(".alert").fadeTo(1500, 0).slideUp(500, function(){
+			        $(this).remove(); 
+			    });
+			}, 5000);
+			 
+			});
 		</script>
 	@stop

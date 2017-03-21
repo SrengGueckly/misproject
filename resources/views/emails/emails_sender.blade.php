@@ -2,7 +2,7 @@
     To whom it may concern,
     <br/>
     <br/>
-    Below are message from visitor of Grand Phnom Penh International City (GPPIC) Website:
+    Below are message from visitor of SyClction Website:
     <br/>
     <br/>
     Message:

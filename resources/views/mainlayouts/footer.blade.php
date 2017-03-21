@@ -26,10 +26,6 @@
 					<div class="col-md-4 footer-middle-in">
 						<h6>Newsletter</h6>
 						<span>Sign up for News Letter</span>
-							<form>
-								<input type="text" value="Enter your E-mail" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Enter your E-mail';}">
-								<input type="submit" value="Subscribe">	
-							</form>
 					</div>
 					<div class="clearfix"> </div>
 				</div>

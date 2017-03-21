@@ -20,19 +20,6 @@
 						<li><a href="https://www.facebook.com/%E1%9E%98%E1%9E%BE%E1%9E%9B%E1%9E%A2%E1%9E%B8%E1%9E%98%E1%9E%BE%E1%9E%9B%E1%9E%91%E1%9F%85-681969555298264/" target="_blank"><i class="ic1"></i></a></li>
 						<li><a href="#"><i class="ic2"></i></a></li>
 						<li><a href="#"><i class="ic3"></i></a></li>
-						<!-- <li>
-							@if ($lang === 'en')
-							<a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('kh') }}">
-								<img class="img-fluid flag" src="{{ asset('images/kh_icon.jpg') }}" alt="english language">
-								<span class="_text lang">KH</span>
-							</a>
-							@else
-							<a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('en') }}">
-								<img class="img-fluid flag" src="{{ asset('images/en_icon.jpg') }}" alt="english language">
-								<span class="_text lang">EN</span>
-							</a>
-							@endif
-						</li> -->
 					</ul>
 					
 			</div>
@@ -192,7 +179,6 @@
 							</li>
 							<li><a class="color3" href="/product">{{ trans('content.header.header_4') }}</a></li>
 							<li><a class="color4" href="/404">{{ trans('content.header.header_5') }}</a></li>
-				          <!--   <li><a class="color5" href="{{$baseUrlLang}}/typo">{{ trans('content.header.header_6') }}</a></li> -->
 				            <li ><a class="color6" href="/contact">{{ trans('content.header.header_7') }}</a></li>
 				        </ul>
 				    </div><!-- /.navbar-collapse -->
