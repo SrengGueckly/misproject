@@ -121,8 +121,8 @@ class PagesController extends Controller
       $location=Input::get('location');
       $producttitle=Input::get('producttitle');
       $productprice=Input::get('productprice');
-      // $client = new \GuzzleHttp\Client();
-      // $client->setDefaultOption('verify', false);
+      $client = new \GuzzleHttp\Client;
+      $client->setDefaultOption('verify', false);
           $inputAll=Input::all();
           try{
               // Validate input
